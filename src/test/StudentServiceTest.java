@@ -38,6 +38,7 @@ class StudentServiceTest {
 
     @Test
     void isSubscribedNotEquals() {
+        studentService.subscribeStudent(student);
         // Checks if the studentId is not equals to any initialized/created student
         assertFalse(studentService.isSubscribed("7891"));
     }
